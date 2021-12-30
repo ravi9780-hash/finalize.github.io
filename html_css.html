@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>CSS</title>
+    <style>
+         body {
+            background-color: #d4ecdd;
+        }
+        
+        .pp {
+            background-color: #244651;
+        }
+    </style>
+  </head>
+  <body>
+    <h1 class=" text-info text-center pp">CSS</h1>
+    <div class="container">
+        <p>HTML with <a href="/css/index.htm">CSS</a> is used to design web page more interactive.</p>
+        <p>To learn more about <a href="/html/html-styles.htm">styling HTML elements</a>, refer to <a href="/css/index.htm">CSS Tutorial</a>.</p>
+        <p>For now, let's take a quick look at HTML with CSS to create some interactive web pages. You can style your HTML elements
+        in one of the following three ways:</p>
+        <ul>
+           <li><a href="/css/css-inclusion.htm">internal CSS</a></li>
+           <li><a href="/css/css-inclusion.htm">external CSS</a></li>
+           <li><a href="/css/css-inclusion.htm">inline CSS</a></li>
+        </ul>
+  
+        <h2 class="text-info" >HTML CSS Syntax</h2  >
+        <p>You can use the following general form to use HTML with CSS:</p>
+        <div class="program_box">
+        <pre>element{property1:value1;property2:value2;}</pre>
+        </div>
+        <p>Here, the element is an HTML element name. The property is a CSS property. The value is a CSS value. Multiple styles are separated
+        with semicolon.</p>
+  
+        <h2 class="text-info" >HTML CSS - Inline</h2  >
+        <p>You can style your HTML elements using inline CSS. Here is an example shows how to use inline CSS to style HTML elements:</p>
+        <div class="program_box">
+        <pre>&lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+     &lt;title&gt;HTML CSS Example&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  
+  &lt;p style="color:red"&gt;This is HTML CSS Example (red)&lt;/p&gt;
+  
+  &lt;/body&gt;
+  &lt;/html&gt;</pre>
+        </div>
+       
+  
+        <h2 class="text-info" >HTML CSS - Internal</h2  >
+        <p>You can use internal CSS to define common style for all the HTML elements on the same page. Internal style is defined inside the head section,
+        using the &lt;style&gt; element. Here is an example shows how to use internal CSS to style HTML elements:</p>
+        <div class="program_box">
+        <pre>&lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+     &lt;title&gt;HTML CSS Example&lt;/title&gt;
+     &lt;style&gt;
+        body{background-color:black}
+        h2{color:red}
+        p{color:white}
+     &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  
+  &lt;h2&gt;This is HTML CSS Example (red)&lt;/h2&gt;
+  &lt;p&gt;This is HTML CSS Example (white)&lt;/p&gt;
+  
+  &lt;/body&gt;
+  &lt;/html&gt;</pre>
+        </div>
+       
+  
+        <h2 class="text-info" >HTML CSS - External</h2  >
+        <p>External styling is most important from all the three ways of styling. Because in external CSS, you have a external file with <b>.css</b>
+        extension contains all the styling things. And you can import this file in any of your HTML document to apply the styles (that is defined
+        in that CSS file) to the HTML document. Let's look at the following example:</p>
+        <p>Let's assume, you have the following css file named as <b>mycss.css</b>:</p>
+        <div class="program_box">
+        <pre>body{background-color:black}
+  h3{color:red}
+  p{color:white}</pre>
+        </div>
+        <p>Now include the location of this <b>mycss.css</b> file into your html file as follows:</p>
+        <div class="program_box">
+        <pre>&lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+     &lt;title&gt;HTML CSS Example&lt;/title&gt;
+     &lt;link rel="stylesheet" href="mycss.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  
+  &lt;h3&gt;This is HTML CSS Example (red)&lt;/h3&gt;
+  &lt;p&gt;This is HTML CSS Example (white)&lt;/p&gt;
+  
+  &lt;/body&gt;
+  &lt;/html&gt;</pre>
+        </div>
+        <p>Following is the output of the above HTML with CSS example code:</p>
+      
+  
+        <h2 class="text-info" >HTML CSS - Fonts</h2  >
+        <p><a href="/css/css-color-names-codes-rgb-hexadecimal.htm">CSS color</a>, <a href="/css/css-fonts.htm">font-size</a>, and
+        <a href="/css/css-fonts.htm">font-family</a>, are used to define text color, text size, and font to be used for the HTML element.
+        Here is an example:</p>
+        <div class="program_box">
+        <pre>&lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+     &lt;title&gt;HTML CSS Example&lt;/title&gt;
+     &lt;style&gt;
+        body{background-color:green;}
+        h1
+        {
+           color:white;
+           font-family:verdana;
+           font-size:150%;
+        }
+        p
+        {
+           color:silver;
+           font-family:courier;
+           font-size:110%;
+        }
+     &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  
+  &lt;h1&gt;HTML with CSS Example (white)&lt;/h1&gt;
+  &lt;p&gt;HTML with CSS Example (silver)&lt;/p&gt;
+  
+  &lt;/body&gt;
+  &lt;/html&gt;</pre>
+        </div>
+        <p>Here is the sample output produced by the above HTML with CSS example code:</p>
+       
+  
+        <h2 class="text-info" >HTML with CSS More Examples</h2  >
+        <p>Here are some more examples on HTML with CSS. As every HTML element has a box around it, no matter we are seeing or not.
+        The <a href="/css/css-border.htm">CSS border</a> property is used to define a visible border around HTML element. Let's look at the
+        following example:</p>
+        <div class="program_box">
+        <pre>&lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+     &lt;title&gt;HTML with CSS Example&lt;/title&gt;
+     &lt;style&gt;
+        h2 { border : 5px solid red; }
+        p { border:2px solid green; }
+     &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  
+  &lt;h2&gt;HTML with CSS Example (5px red border)&lt;/h2&gt;
+  &lt;p&gt;This is HTML with CSS Example (2px green border)&lt;/p&gt;
+  &lt;p&gt;This is HTML with CSS Example (2px green border)&lt;/p&gt;
+  
+  &lt;/body&gt;
+  &lt;/html&gt;</pre>
+        </div>
+       
+        <p>The CSS padding property defines a padding (space) inside the border, which makes border more interactive.
+        Let's look at the following example demonstrates how to define padding inside the border using CSS:</p>
+        <div class="program_box">
+        <pre>&lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+     &lt;title&gt;HTML with CSS Example&lt;/title&gt;
+     &lt;style&gt;
+        h2 { border : 5px solid red; padding:10px; }
+        p { border:2px solid green; padding:5px; }
+     &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  
+  &lt;h2&gt;HTML with CSS (5px red border)&lt;/h2&gt;
+  &lt;p&gt;This is HTML with CSS Example (2px green border)&lt;/p&gt;
+  &lt;p&gt;This is HTML with CSS Example (2px green border)&lt;/p&gt;
+  
+  &lt;/body&gt;
+  &lt;/html&gt;</pre>
+        </div>
+        <p>Following is the output of the above HTML with CSS example:</p>
+      
+        <p>The CSS margin property defines a margin (space) outside the border. Let's look at the following example:</p>
+        <div class="program_box">
+        <pre>&lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+     &lt;title&gt;HTML with CSS Example&lt;/title&gt;
+     &lt;style&gt;
+        h2 { border : 5px solid red; padding:10px; margin:30px; }
+        p { border:2px solid green; padding:5px; margin:10px; }
+     &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  
+  &lt;h2&gt;HTML with CSS (5px red border)&lt;/h2&gt;
+  &lt;p&gt;This is HTML with CSS Example (2px green border)&lt;/p&gt;
+  &lt;p&gt;This is HTML with CSS Example (2px green border)&lt;/p&gt;
+  
+  &lt;/body&gt;
+  &lt;/html&gt;</pre>
+        </div>
+      
+  
+  
+  <hr/>
+ 
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

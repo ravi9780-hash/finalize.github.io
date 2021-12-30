@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>HTML FONTS</title>
+    <style>
+        body{
+            background-color: #d4ecdd;
+        }
+        .pp{
+            background-color: #244651;
+
+        }
+    </style>
+  </head>
+  <body>
+      <h1 class="text-info p-3 pp text-center">HTML FONTS</h1>
+      <div class="container">
+
+
+     
+
+    <p>The HTML font tag (&lt;font&gt;) is used to specify the font face, size, and <a href="/html/html-colors.htm">color</a> of the text in an HTML
+        document. But the font tag is not supported in HTML5. You can use <a href="/css/index.htm">CSS</a> instead.</p>
+  
+        <h4 class="text-info">HTML Set Font Size</h4 >
+        <p>You can set content font size using the size <a href="/html/html-attributes.htm">attribute</a>. The range of accepted values is from 1(smallest)
+        to 7(largest). The default size of a font is 3.</p>
+        <p>You can also use font-size in pixels and percentage. Let's look at the following example shows how to set font size in HTML:</p>
+        <div class="program_box">
+        <pre>&lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+     &lt;title&gt;HTML Fonts Example&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  
+  &lt;p style="font-size:12px"&gt;Using HTML Font (12px)&lt;/p&gt;
+  &lt;p style="font-size:22px"&gt;Using HTML Font (22px)&lt;/p&gt;
+  &lt;p style="font-size:80%"&gt;Using HTML Font (80%)&lt;/p&gt;
+  &lt;p style="font-size:120%"&gt;Using HTML Font (120%)&lt;/p&gt;
+  &lt;p style="font-size:1em"&gt;Using HTML Font (1em)&lt;/p&gt;
+  &lt;p style="font-size:1.5em"&gt;Using HTML Font (1.5em)&lt;/p&gt;
+  
+  &lt;/body&gt;
+  &lt;/html&gt;</pre>
+        </div>
+        <p>Here is the sample output produced by the above HTML font example code:</p>
+        <div class="img_box">
+           <img alt="HTML Font Size Setting Example" src="/html/images/html_font_size_setting.jpg"/>
+        </div>
+  
+        <h4 class="text-info">HTML Set Text Font</h4 >
+        <p>You can set font face using face attribute but be aware that if the user viewing the page doesn't have the font installed,
+        they will not be able to see it. Instead user will see the default font face applicable to the user's computer.</p>
+        <p>You can also use font-family to set font of the text. Let's Look at the following example shows how to set font of the text in an
+        HTML document:</p>
+        <div class="program_box">
+        <pre>&lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+     &lt;title&gt;HTML Font Example&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  
+  &lt;font face="Verdana"&gt;Using HTML Font (Verdana)&lt;/font&gt;&lt;br /&gt;
+  &lt;font face="Times New Roman"&gt;Using HTML Font (Times New Roman)&lt;br /&gt;
+  &lt;p style="font-family:verdana"&gt;Using HTML Font (verdana)&lt;/p&gt;
+  &lt;p style="font-family:'Courier New'"&gt;Using HTML Font (Courier New)&lt;/p&gt;
+  
+  &lt;/body&gt;
+  &lt;/html&gt;</pre>
+        </div>
+        <p>Here is the sample output displayed by the above HTML font example program:</p>
+        <div class="img_box">
+           <img alt="HTML Text Font Setting" src="/html/images/html_text_font_setting.jpg"/>
+        </div>
+  
+        <h4 class="text-info">HTML Set Font Color</h4 >
+        <p>You can set any font color using color attribute. You can specify the color that you want by either the color name or hexadecimal code
+        or by using their rgb values. Let's look at the following example shows how to set font color in an HTML document:</p>
+        <div class="program_box">
+        <pre>&lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+     &lt;title&gt;HTML Font Example&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  
+  &lt;p style="color:#ff0055;"&gt;Using HTML Font (hexadecimal=#ff0055)&lt;/font&gt;&lt;br /&gt;
+  &lt;p style="color:blue;"&gt;Using HTML Font (name=blue)&lt;/p&gt;
+  &lt;p style="color:rgb(0, 190, 125);"&gt;Using HTML Font (rbg=rgb(0,190,125))&lt;/p&gt;
+  
+  &lt;/body&gt;
+  &lt;/html&gt;</pre>
+        </div>
+        <p>It will display the following in the browser:</p>
+        <div class="img_box">
+           <img alt="HTML Font Color Setting Example" src="/html/images/html_font_color_setting.jpg"/>
+        </div>
+        <p>To get code of all colors in HTML, refer <a href="/html/html-colors.htm">HTML All Color Codes</a>.</p>
+  
+      
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
